@@ -1,0 +1,26 @@
+@import "../partials/variable";
+body{
+  background-color: #f7f7f7;
+}
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn{
+  width: 295px;
+  height: 52px;
+  border: 1px solid $main_color;
+  border-radius: 5px;
+  h4{
+    line-height: 52px;
+    a {
+      text-transform: uppercase;
+      color: $main_color;
+      font-size: 16px;
+      font-family: 'MyriadPro-Semibold';
+      text-align: center;
+    }
+  }
+}
