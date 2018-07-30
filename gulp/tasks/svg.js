@@ -7,18 +7,18 @@ module.exports = function() {
                }
            }))
            .pipe($.gp.cheerio({
-               run: function ($){
-                   $(['fill']).removeAttr('fill');
-                   $(['stroke']).removeAttr('stroke');
-                   $(['style']).removeAttr('style');
+               run: function($) {
+                   $('[fill]').removeAttr('fill');
+                   $('[stroke]').removeAttr('stroke');
+                   $('[style]').removeAttr('style');
                },
-               parserOptions:{ xmlMode:true }
+               parserOptions: { xmlMode: true }
            }))
            .pipe($.gp.replace('&gt;', '>'))
            .pipe($.gp.svgSprite({
                mode: {
                    symbol: {
-                       sprite:'sprite.svg'
+                       sprite: "sprite.svg"
                    }
                }
            }))

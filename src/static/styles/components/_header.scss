@@ -1,0 +1,12 @@
+ul{
+  @include row-flex();
+  @include wrapper();
+  li{
+    background-color: red;
+    @include Size(300);
+    @include col();
+    @include size(3);
+    @include size-md(6);
+    @include md(margin-bottom, 15px);
+  }
+}
